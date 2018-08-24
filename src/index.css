@@ -1,5 +1,13 @@
 body {
   margin: 0;
+  margin-left: auto;
+  margin-right:auto;
   padding: 0;
   font-family: sans-serif;
+  background-image: linear-gradient(to right, #ddd , white, #ddd);
+  text-align:center;
+}
+h1 {
+  font-family: 'Wallpoet', cursive;
+  font-size: 2rem;
 }
