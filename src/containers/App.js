@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Card from '../components/Card';
 import InputBox from '../components/InputBox';
 
@@ -8,7 +7,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      searchfield: 'example'
+      searchfield: 'Robot'
     }
   }
   onSearchChange = (event) => {
@@ -17,11 +16,12 @@ class App extends Component {
 
   render() {
     const { searchfield } = this.state;
-    const myDefault = 'example';
+    const myDefault = 'Robot';
     let myInput;
     !searchfield.length ? myInput = myDefault : myInput = searchfield;
     return (
       <div className="App">
+        <header className='ma0 pa2 black'><h1>Find your robotic alter-ego!</h1></header>
         <InputBox searchChange={this.onSearchChange} />
         <Card searchfield={myInput} />
       </div>
