@@ -1,8 +1,8 @@
 import React from 'react';
-const Card = ({username, searchfield}) => {
+const Card = ({searchfield}) => {
   return (
-    <div className ='w5 bg-light-gray tc dib br3 pa3 ma2 grow bw2 shadow-3'>
-      <img alt='robo' src = {`https://robohash.org/${searchfield}?size=170x170`}/>
+    <div className ='w5 tc dib br3 pa1'>
+      <img alt='robo' src = {`https://robohash.org/${searchfield}?size=250x250`}/>
         <h2 >{searchfield}</h2>
     </div>
   );
